@@ -38,3 +38,45 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+$dreamcolor: #bf4635;
+
+body {
+  font-family: Helvetica;
+}
+
+.main-nav {
+  list-style: none;
+  position: fixed;
+  top: 50px;
+  li {
+    float: left;
+    a {
+      color: gray;
+      font-weight: 100;
+      color: gray;
+      font-weight: 100;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 12px;
+      &.active {
+        color: #fff;
+        background: $dreamcolor;
+      }
+    }
+  }
+}
+
+.caption {
+  margin-top: 140px;
+  text-transform: uppercase;
+  color: $dreamcolor;
+  font-weight: 200;
+}
+
+.space-1 {
+  .dreamlogo {
+    width: 450px;
+  }
+  margin-top: 100px;
+}
