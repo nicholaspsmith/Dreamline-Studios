@@ -45,10 +45,19 @@ body {
   font-family: Helvetica;
 }
 
+#fp-nav {
+  margin-top: -47.5px;
+  position: fixed;
+  float: none !important;
+  top: 50%;
+  right: 10px;
+}
+
 .main-nav {
   list-style: none;
   position: fixed;
   top: 50px;
+  z-index: 999;
   li {
     float: left;
     a {
@@ -67,16 +76,26 @@ body {
   }
 }
 
-.caption {
-  margin-top: 140px;
-  text-transform: uppercase;
-  color: $dreamcolor;
-  font-weight: 200;
-}
-
 .space-1 {
+  .large-6 {
+    margin-top: 0;
+    transition: all .7s ease-in-out;
+  }
   .dreamlogo {
     width: 450px;
   }
-  margin-top: 100px;
+  .caption {
+    text-transform: uppercase;
+    color: $dreamcolor;
+    font-weight: 200;
+  }
 }
+
+.space-2 {
+  background: #ccc;
+}
+
+.space-3 {
+  background: #eee;
+}
+
